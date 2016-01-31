@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6825DC18-7382-4700-8A50-7DE5AB515464}</ProjectGuid>
+    <ProjectGuid>{5BC18BC2-8DC3-4FAE-A95C-0577EFC812C2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Abit.Tests</RootNamespace>
-    <AssemblyName>Abit.Tests</AssemblyName>
+    <RootNamespace>Abit.Entities</RootNamespace>
+    <AssemblyName>Abit.Entities</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,18 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="nunit.framework, Version=3.0.5813.39031, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.0.1\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,36 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Data\EnroleeRepositoryTests.cs" />
+    <Compile Include="Enrolee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Abit.Api\Abit.Api.csproj">
-      <Project>{31d4931a-5cdb-45e7-a96a-ac448a5613e1}</Project>
-      <Name>Abit.Api</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Abit.Data\Abit.Data.csproj">
-      <Project>{f817192b-71b7-490c-bd17-3e3fd71df844}</Project>
-      <Name>Abit.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Abit.Entities\Abit.Entities.csproj">
-      <Project>{5bc18bc2-8dc3-4fae-a95c-0577efc812c2}</Project>
-      <Name>Abit.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Abit.Logic\Abit.Logic.csproj">
-      <Project>{c72a7109-9eb8-4a7a-8fd7-ca953d09ecea}</Project>
-      <Name>Abit.Logic</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
